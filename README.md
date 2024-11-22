@@ -80,7 +80,8 @@ O layout foi projetado com um foco minimalista e responsivo:
 ---
 
 ## 🖋️ Autor  
-Desenvolvido por **[minoru Yamanaka]**.  
+Desenvolvido por **[Minoru Yamanaka](https://github.com/minoru-yamanaka)**.
+**[Cesar Augusto](https://github.com/cesaraugusto-snc)**. 
 Sinta-se à vontade para contribuir!  
 
 ---  # defasio_luana_site_ia_21124
