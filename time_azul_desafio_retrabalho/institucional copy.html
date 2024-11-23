@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institucional</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            height: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        nav .main-menu {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+        nav .side-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 20px;
+            top: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        main {
+            padding: 20px;
+        }
+        .section {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .section img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .circle-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .circle {
+            background-color: gray;
+            color: white;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            text-align: center;
+        }
+        .circle-name {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .arrow-down {
+            position: absolute;
+            left: 50%;
+            font-size: 18px;
+            color: #eff3f2;
+        }
+        footer {
+            background-color: #eff3f2;
+            color: #333;
+            text-align: center;
+            padding: 20px 10px 60px;
+            position: relative;
+        }
+        /* Cores das seções */
+        #institucional {
+            background-color: #ffffff;
+        }
+        #noticias {
+            background-color: #68a897;
+            color: white;
+        }
+        #novas-descobertas {
+            background-color: #ffffff;
+        }
+        #prevencoes {
+            background-color: #516178;
+            color: white;
+        }
+        #membros-fundadores {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!--  -->
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <img src="../img_logo.png" alt="Logo">
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#institucional">Institucional</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#novas-descobertas">Novas descobertas</a></li>
+                <li><a href="#prevencoes">Prevenções e recomendações</a></li>
+                <li><a href="#membros-fundadores">Membros Fundadores</a></li>
+                <li><a href="#parceiros">Parceiros</a></li>
+            </ul>
+            <ul class="side-menu">
+                <li><a href="#area-membros">Área de membros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Conteúdo Principal -->
+        <!-- Primeira Seção - Institucional -->
+        <div class="section" id="institucional">
+            <div style="width: 60%;">
+                <h1>Institucional</h1>
+                <p>
+                    A nossa instituição é comprometida em promover o bem-estar social por meio de ações que visam transformar positivamente a vida das pessoas. Desde a nossa fundação, trabalhamos para desenvolver soluções que atendam às necessidades da comunidade e incentivem o crescimento sustentável.
+                </p>
+                <p>
+                    Contamos com uma equipe dedicada e apaixonada pelo que faz, sempre buscando inovação e excelência em cada projeto que realizamos. Nossa missão é criar um impacto duradouro, fornecendo suporte, educação e oportunidades para todos os que necessitam.
+                </p>
+                <button>Exibir mais</button>               
+                <div class="arrow-down">v</div>
+            </div>
+            <div style="width: 30%; display: flex; justify-content: center;">
+                <img src="Designer15.png" alt="Imagem Institucional" style="max-width: 100%; border-radius: 10px;">
+            </div>
+        </div>
+
+        <!-- Segunda Seção - Notícias -->
+        <div class="section" id="noticias">
+            <div style="width: 30%; display: flex; justify-content: center;">
+                <img src="../noticias.jpg" alt="Imagem Notícias" style="max-width: 100%; border-radius: 10px;">
+            </div>
+            <div style="width: 60%;">
+                <h1>Notícias</h1>
+                <p>
+                    A nossa instituição está sempre atenta às últimas novidades e inovações que impactam o setor. Estamos orgulhosos de anunciar novos avanços que trarão benefícios significativos para a nossa comunidade e para o desenvolvimento de novos projetos.
+                </p>
+                <p>
+                    Acompanhe as atualizações regulares em nossa página e fique por dentro de tudo o que está acontecendo no mundo da inovação e da tecnologia. Estamos comprometidos com a transparência e a comunicação constante.
+                </p>
+                <button>Exibir mais</button>
+                <div class="arrow-down">v</div>
+            </div>
+        </div>
+
+        <!-- Terceira Seção - Novas Descobertas -->
+        <div class="section" id="novas-descobertas">
+            <div style="width: 60%;">
+                <h1>Novas Descobertas</h1>
+                <p>
+                    Nossas novas descobertas estão moldando o futuro e ampliando o horizonte de possibilidades. Investimos em pesquisas que geram conhecimento e proporcionam inovações tecnológicas que irão beneficiar a sociedade e o meio ambiente.
+                </p>
+                <p>
+                    Acreditamos que essas descobertas vão impactar positivamente vários setores e nos aproximar de soluções mais eficazes para os desafios globais.
+                </p>
+                <button>Exibir mais</button>
+                <div class="arrow-down">v</div> 
+            </div>
+            <div style="width: 30%; display: flex; justify-content: center;">
+                <img src="../novas-descobertas.jpg" alt="Imagem Novas Descobertas" style="max-width: 100%; border-radius: 10px;">
+            </div>
+        </div>
+
+        <!-- Quarta Seção - Prevenções e Recomendações -->
+        <div class="section" id="prevencoes">
+            <div style="width: 30%; display: flex; justify-content: center;">
+                <img src="../prevencao.jpg" alt="Imagem Prevenções" style="max-width: 100%; border-radius: 10px;">
+            </div>
+            <div style="width: 60%;">
+                <h1>Prevenções e Recomendações</h1>
+                <p>
+                    Nossa missão também inclui fornecer orientações e práticas preventivas para garantir a saúde e bem-estar de todos. Estamos constantemente atualizados sobre as melhores formas de prevenção em diversos setores, especialmente no que diz respeito à saúde pública.
+                </p>
+                <p>
+                    Recomendamos a implementação de medidas eficazes para minimizar riscos e promover um ambiente mais seguro e saudável para todos.
+                </p>
+                <button>Exibir mais</button>
+                <div class="arrow-down">v</div> 
+            </div>
+        </div>
+
+                <!-- Quarta Seção - Prevenções e Recomendações -->
+                <div class="section" id="membros-fundadores">
+                    <div style="width: 30%; display: flex; justify-content: center;">
+                        <h1>Membros Fundadores</h1>
+                    </div>
+                    <div style="width: 30%; display: flex; justify-content: center;"></div>
+                </div>
+                        <!-- Seção de Membros Fundadores -->
+                        <div class="circle-container">
+                            <div class="circle-wrapper">
+                                <div class="circle"></div>
+                                <div class="circle-name">
+                                    <h2>João Silva</h2>
+                                </div>
+                            </div>
+                            <div class="circle-wrapper">
+                                <div class="circle"></div>
+                                <div class="circle-name">
+                                    <h2>Ana Costa</h2>
+                                </div>
+                            </div>
+                            <div class="circle-wrapper">
+                                <div class="circle"></div>
+                                <div class="circle-name">
+                                    <h2>Paulo Souza</h2>
+                                </div>
+                            </div>
+                            <div class="circle-wrapper">
+                                <div class="circle"></div>
+                                <div class="circle-name">
+                                    <h2>Maria Oliveira</h2>
+                                </div>
+                            </div>
+                        </div>
+        
+    </main>
+    <footer>
+        <h2>Parceiros</h2>
+        <p>
+            Texto e links de parceiros.
+        </p>
+    </footer>
+</body>
+</html>

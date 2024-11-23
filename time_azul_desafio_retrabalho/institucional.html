@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Título da Página</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #f8f8f8;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav .main-menu {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .imagem-institucional {
+      width: 100%;
+    }
+
+    .texto-institucional {
+      flex: 1;
+    }
+
+    .card-lateral {
+      flex: 1;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .card {
+      flex: 1 1 calc(33.333% - 20px);
+      max-width: calc(33.333% - 20px);
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    footer {
+      background-color: #eff3f2;
+      color: #333;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    /* Accordion */
+    .accordion {
+      background-color: #f8f8f8;
+      color: #333;
+      cursor: pointer;
+      padding: 10px 15px;
+      width: 100%;
+      text-align: left;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .panel {
+      padding: 0 15px;
+      display: none;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+
+    table caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .card {
+        flex: 1 1 calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+
+    .card-lateral img {
+  max-width: 150px;
+  height: auto;
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="../img_logo.png" alt="Logo">
+  <nav>
+    <ul class="main-menu">
+      <li><a href="#institucional">Institucional</a></li>
+      <li><a href="#noticias">Notícias</a></li>
+      <li><a href="#novas-descobertas">Novas Descobertas</a></li>
+      <li><a href="#prevencoes">Prevenções</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <img src="Designer15.png" alt="Imagem Institucional" class="imagem-institucional">
+
+    <div class="texto-institucional">
+      <h1>Institucional</h1>
+    </br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus totam facere enim eius dolore eum reprehenderit saepe possimus ea quasi nobis dolor dolorum facilis, iusto sit ratione modi aut!
+      Impedit sapiente ea alias, odit voluptate commodi temporibus explicabo iure. Minus temporibus, dolore, excepturi ullam ad quaerat fugiat aliquam officiis quisquam animi consequuntur nisi eveniet neque ipsa optio laudantium ipsam.
+      Velit explicabo eligendi voluptas quo non? Perspiciatis, fugiat impedit? Laborum, quae omnis a, exercitationem ea esse quis quam adipisci accusantium reprehenderit commodi facilis repudiandae enim? Accusantium tenetur repellat nam architecto?
+      </p>
+    </div>
+  </div>
+
+  <div class="card-lateral">
+    <img src="../img_logo.png" alt="Logo Lateral" style="max-width: 150px; height: auto;">
+    <h2>Título do Card</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <img src="../img_logo.png" alt="Logo 1">
+      <h2>Título do Card 1</h2>
+      <p>Texto do Card 1.</p>
+    </div>
+    <div class="card">
+      <img src="../img_logo.png" alt="Logo 2">
+      <h2>Título do Card 2</h2>
+      <p>Texto do Card 2.</p>
+    </div>
+    <div class="card">
+      <img src="../img_logo.png" alt="Logo 3">
+      <h2>Título do Card 3</h2>
+      <p>Texto do Card 3.</p>
+    </div>
+  </div>
+
+  <button class="accordion">0001</button>
+  <div class="panel">
+    <h2>teste</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolore iure repellat, reiciendis iste, tenetur distinctio deleniti sed mollitia quos architecto ea delectus doloremque sequi. At neque dolorum quibusdam officiis?</p><br></p>
+  </div>
+
+  <button class="accordion">0002</button>
+  <div class="panel">
+    <h2>teste</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolore iure repellat, reiciendis iste, tenetur distinctio deleniti sed mollitia quos architecto ea delectus doloremque sequi. At neque dolorum quibusdam officiis?</p><br></p>
+  </div>
+
+  <button class="accordion">0003</button>
+  <div class="panel">
+    <h2>teste</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolore iure repellat, reiciendis iste, tenetur distinctio deleniti sed mollitia quos architecto ea delectus doloremque sequi. At neque dolorum quibusdam officiis?</p><br></p>
+  </div>
+
+  <button class="accordion">0004</button>
+  <div class="panel">
+    <h2>teste</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolore iure repellat, reiciendis iste, tenetur distinctio deleniti sed mollitia quos architecto ea delectus doloremque sequi. At neque dolorum quibusdam officiis?</p><br></p>
+  </div>
+
+  <button class="accordion">0005</button>
+  <div class="panel">
+    <h2>teste</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex dolore iure repellat, reiciendis iste, tenetur distinctio deleniti sed mollitia quos architecto ea delectus doloremque sequi. At neque dolorum quibusdam officiis?</p><br></p>
+  </div>
+
+  <div style="background-color: #28a745; padding: 20px; text-align: center; border-radius: 5px; color: white;">
+    <h2>Newsletter</h2>
+    <p>Cadastre-se e receba nossos informativos.</p>
+    <form style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 10px;">
+      <input type="email" placeholder="Digite seu e-mail" style="padding: 10px; border: none; border-radius: 5px; width: 250px;">
+      <input type="checkbox" style="width: 20px; height: 20px;">
+    </form>
+  </div>
+
+
+</main>
+
+<footer style="background-color: #eff3f2; color: #333; text-align: center; padding: 20px 10px; display: flex; justify-content: space-around;">
+    <div>
+      <h3>Sobre Nós</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#historia" style="text-decoration: none; color: #333;">História</a></li>
+        <li><a href="#missao" style="text-decoration: none; color: #333;">Missão</a></li>
+        <li><a href="#valores" style="text-decoration: none; color: #333;">Valores</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Serviços</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#consultoria" style="text-decoration: none; color: #333;">Consultoria</a></li>
+        <li><a href="#treinamento" style="text-decoration: none; color: #333;">Treinamento</a></li>
+        <li><a href="#suporte" style="text-decoration: none; color: #333;">Suporte Técnico</a></li>
+      </ul>
+    </div>
+    
+    <div>
+        <h3>Contato</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="mailto:contato@exemplo.com" style="text-decoration: none; color: #333;">Email</a></li>
+          <li><a href="tel:+551199999999" style="text-decoration: none; color: #333;">Telefone</a></li>
+          <li><a href="#endereco" style="text-decoration: none; color: #333;">Endereço</a></li>
+        </ul>
+      </div>
+      
+      <div style="display: flex; gap: 10px; justify-content: center;">
+        <img src="../img_logo.png" alt="Logo" style="height: 40px;">
+        <img src="../img_logo.png" alt="Logo" style="height: 40px;">
+        <img src="../img_logo.png" alt="Logo" style="height: 40px;">
+      </div>
+      
+  </footer>
+
+  <div style="background-color: #f8f8f8; padding: 20px; text-align: center; border-radius: 5px; color: black;">
+    <p>Cadastre-se e receba nossos informativos.</p>
+  </div>
+
+<script>
+  const accordions = document.querySelectorAll('.accordion');
+
+  accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
+      accordion.classList.toggle('active');
+      const panel = accordion.nextElementSibling;
+      if (panel.style.display === 'block') {
+        panel.style.display = 'none';
+      } else {
+        panel.style.display = 'block';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
